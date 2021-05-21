@@ -1,0 +1,150 @@
+@import "../../../scss/tools/mixins";
+.account-avatar-image {
+  width: 75px;
+}
+
+.account-avatar-image img {
+  border-radius: 3.75px !important;
+}
+
+.account-avatar-image {
+  width: 100% !important;
+  margin-top: 10px !important;
+}
+.dashboard-product-item-image-col.ant-col {
+  flex: 0 0 80px;
+}
+.account-avatar-image {
+  width: 100px !important;
+  margin: auto !important;
+}
+.account-avatar-image .ant-card-cover div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px !important;
+  overflow: hidden;
+}
+.account-avatar-image .ant-card-cover img {
+  width: auto !important;
+  height: 100% !important;
+}
+.profile-item-username {
+  text-align: center;
+}
+.profile-item-username .ant-statistic-content-value {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-align: center;
+  color: #192e46;
+}
+.profile-item-details .ant-statistic-content,
+.producer-info-number-container .ant-btn > span {
+  color: #768ca5 !important;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.producer-info-number-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+// form avatar
+.dashboard-form-avatar .ant-upload.ant-upload-select-picture-card > .ant-upload {
+  padding: 0 !important;
+}
+.dashboard-form-avatar .ant-upload.ant-upload-select-picture-card,
+.dashboard-form-avatar .ant-upload,
+.dashboard-form-avatar .ant-upload div {
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 80px;
+}
+.dashboard-form-avatar .ant-upload {
+  overflow: hidden;
+}
+.dashboard-form-avatar .ant-upload img {
+  height: 100% !important;
+  width: auto !important;
+  border-radius: 80px !important;
+}
+.dashbaord-avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.dashboard-product-add-image-icon {
+  justify-content: center;
+  place-items: center;
+  display: flex;
+}
+@include customRange(0, 768) {
+  #profile-item-card {
+    margin: 10px;
+  }
+  .profile-item-username .ant-statistic-content-value {
+    font-size: 2rem !important;
+  }
+  .profile-item-details .ant-statistic-content,
+  .producer-info-number-container .ant-btn > span {
+    font-size: 1.2rem !important;
+  }
+  .producer-info-number-container .ant-btn {
+    height: 40px;
+  }
+}
+.antd-img-crop-modal {
+  .avatar-modal-title {
+    padding: 20px 70px !important;
+    font-family: Poppins;
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+    line-height: 38px !important;
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: -0.02em;
+    color: #192e46 !important;
+    @include customRange(0, 768) {
+      font-size: 1.7rem !important;
+      padding: 50px 0px 20px 0px !important;
+      // padding-top: 50px !important;
+    }
+  }
+  .ant-modal {
+    top: 24px;
+    @include customRange(0, 768) {
+      display: contents;
+      padding: 0;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .ant-modal-footer {
+    padding: 24px;
+    button {
+      &:first-child {
+        display: none;
+      }
+      &:last-child {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 3px !important;
+        height: 38px !important;
+        color: white !important;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600 !important;
+        font-size: 0.7rem !important;
+        border: none !important;
+        box-shadow: none !important;
+        background-color: #fb775a !important;
+        margin: 20px 0px;
+        @include customRange(0, 768) {
+          font-size: 1rem !important;
+          height: 50px !important;
+        }
+      }
+    }
+  }
+}

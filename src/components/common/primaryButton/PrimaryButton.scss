@@ -1,0 +1,29 @@
+$primary-color: #fb775a;
+$button-text-color: white;
+
+.primary-button {
+  border-radius: 3px !important;
+  height: 38px !important;
+  color: $button-text-color !important;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 0.7rem !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: $primary-color !important;
+
+  &:disabled {
+    background-color: #eff1f5 !important;
+    color: #9aa6b4 !important;
+  }
+}
+.primary-button img {
+  margin-right: 10px;
+}
+@media only screen and (max-width: 576px) {
+  .primary-button {
+    font-size: 1rem !important;
+    height: 50px !important;
+  }
+}

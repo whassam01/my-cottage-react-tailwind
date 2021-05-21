@@ -1,0 +1,149 @@
+@import "./../../../scss/tools/mixins";
+.signup-from {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .signup-form-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #192e46;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .signup-form-description {
+    color: #657689;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  .profile-forms-input.dashboard-input-phone-number {
+    padding: 4px 11px !important;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.65);
+    &:hover {
+      border: 1px solid #fb775a;
+    }
+    &::-webkit-input-placeholder {
+      /* Edge */
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.22) !important;
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.22);
+    }
+
+    &::placeholder {
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.22);
+    }
+  }
+  .signup-form-control-box {
+    > div {
+      margin-bottom: 1.3rem;
+    }
+    .fisrt-last-name {
+      display: flex;
+      justify-content: space-between;
+      > div:first-child {
+        margin-right: 1rem;
+      }
+      > div {
+        flex: 1;
+      }
+    }
+  }
+  .signup-form-bottom-text {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 1.3rem;
+    span {
+      color: #fb775a;
+    }
+    a {
+      color: #fb775a;
+    }
+  }
+  .or-connect-with {
+    display: flex;
+    color: #9aa6b4;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    div:nth-child(3),
+    div:nth-child(1) {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 1.5rem;
+      &::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #e0e4e9;
+      }
+    }
+  }
+  .social-login-buttons {
+    display: flex;
+    margin-bottom: 2rem;
+
+    button {
+      flex: 1;
+      height: 38px;
+      color: #ffffff;
+      font-weight: 600 !important;
+      font-size: 0.7rem !important;
+      border-radius: 4px;
+    }
+    .facebook-button {
+      margin-right: 10px;
+      background-color: #3b5998;
+    }
+    .twitter-button {
+      margin-left: 10px;
+      background-color: #00acee;
+    }
+  }
+  .dont-have-account {
+    text-align: center;
+    color: #657689;
+    font-size: 0.9rem;
+    span {
+      color: #fb775a;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}
+#password-label {
+  display: flex;
+  position: relative;
+  &::after {
+    padding-right: 10px;
+    content: attr(datalabel);
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.65rem;
+    right: 20px;
+    line-height: 38px;
+    letter-spacing: 0.07em;
+  }
+}
+@include customRange(0, 767) {
+  .fisrt-last-name {
+    flex-direction: column;
+    > div:first-child {
+      margin-right: 0 !important;
+      margin-bottom: 1.3rem;
+    }
+  }
+  #password-label {
+    &::after {
+      line-height: 50px !important;
+    }
+  }
+}

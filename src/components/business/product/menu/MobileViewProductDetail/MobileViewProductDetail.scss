@@ -1,0 +1,163 @@
+@import "./../../../../../scss//settings/colors";
+
+.mobile-view-product-detail-modal .ant-modal-close {
+  margin: 0;
+}
+.mobile-product-detail-info {
+  margin-bottom: 1rem;
+}
+.mobile-product-detail-category-tags {
+  margin-bottom: 1rem;
+}
+.mobile-product-detail-info-title h2 {
+  font-weight: 900;
+  overflow-wrap: anywhere;
+  color: #192e46;
+}
+
+.mobile-product-detail-info-cost {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+.mobile-view-product-detail-image {
+  margin-bottom: 1rem;
+}
+
+.mobile-view-product-detail-description {
+  color: #657689;
+  margin-bottom: 1.5rem;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.mobile-view-product-detail-hide {
+  margin-bottom: 1rem;
+}
+.mobile-view-product-detail-hide h3 {
+  color: #fb775a;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+}
+
+.mobile-view-product-detail-buttons-wapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.mobile-view-product-detail-buttons-wapper button {
+  border: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 45%;
+  padding: 7px 0;
+  flex: 1;
+}
+
+.edit-button {
+  border: 1px solid #4c6889 !important;
+  background-color: #eef0f1 !important;
+  color: #4c6889;
+  margin-right: 1.3rem;
+}
+
+.delete-button {
+  background-color: #fb5a5a !important;
+  color: #ffffff;
+  padding: 8px 0 !important;
+}
+
+.mobile-view-product-detail-error .ant-alert-description {
+  color: #fb5a5a;
+  font-weight: 500;
+}
+
+.mobile-view-detail-nutrition-values-wrapper,
+.mobile-view-detail-ingridients-wrapper {
+  margin-bottom: 1rem;
+}
+.mobile-view-detail-title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.mobile-view-detail-title-row-icon {
+  margin-right: 10px;
+}
+.mobile-view-detail-title-row-title {
+  color: #768ca5;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.mobile-view-detail-nutrition-values-data-row {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-view-detail-nutrition-values-data {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 262px;
+}
+.mobile-view-detail-nutrition-values-data
+  .mobile-view-detail-nutrition-values-data-row:first-child {
+  margin-bottom: 8px;
+}
+.mobile-view-detail-nutrition-value {
+  flex: 1;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #000000;
+  display: flex;
+  margin-bottom: 2px;
+  margin-right: 8px;
+}
+.mobile-view-detail-nutrition-value > div:first-child {
+  color: #000000;
+}
+.mobile-view-detail-nutrition-value > div {
+  color: #768ca5;
+  font-weight: normal;
+}
+.mobile-view-detail-nutrition-value > div:first-child {
+  margin-right: 5px;
+}
+
+.mobile-view-detail-ingridients-value {
+  font-size: 12px;
+  color: #657689;
+  font-style: italic;
+  font-weight: normal;
+}
+.mobile-view-detail-ingridients-value span {
+  margin-right: 5px;
+}
+
+.mobile-product-detail-tags {
+  border: 1px solid #d9dee4 !important;
+  background-color: #ffffff !important;
+  color: $faded-color !important;
+  font-weight: 600;
+  font-size: 0.6rem !important;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.mobile-view-product-details-trigger-button {
+  display: inline-block;
+  margin-left: 2px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+  color: $primary-color;
+}

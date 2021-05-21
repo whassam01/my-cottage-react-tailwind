@@ -1,0 +1,26 @@
+@import "./../../../scss/tools/mixins";
+.subscription-checkout-container {
+  display: flex;
+  max-height: calc(100vh - 60px);
+  height: 100vh;
+  .subscription-checkout-plan-info {
+    flex: 1 1;
+    max-height: calc(100vh - 60px);
+    overflow: auto;
+  }
+  .subscription-checkout-plan-summary {
+    @include customRange(0, 767) {
+      & {
+        display: none;
+      }
+    }
+    flex: 0.5;
+    max-width: 500px;
+    padding: 0 1rem;
+    background: #ffffff;
+    font-size: 0.9rem;
+    max-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+  }
+}

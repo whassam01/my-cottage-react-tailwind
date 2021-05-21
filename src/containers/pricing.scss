@@ -1,0 +1,207 @@
+.pricingpage {
+  /*@media(min-width: 992px) {
+        .ant-col-lg-12-cstm {
+            width: 75%!important;
+        }
+        .ant-col-sm-offset-3-cstm {
+            margin-left: 12.5%;
+            margin-bottom: 2em;
+        }
+    }
+    @media(max-width: 1070px) {
+        .ant-col-lg-12-cstm {
+            width: 75%!important;
+        }
+        .ant-col-sm-offset-3-cstm {
+            margin-left: 12.5%;
+            margin-bottom: 2em;
+        }
+    }*/
+  /* different techniques for iPad screening */
+  @media only screen and (min-device-width: 992px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .ant-col-lg-12-cstm {
+      width: 75% !important;
+    }
+    .ant-col-sm-offset-3-cstm {
+      margin-left: 12.5%;
+      margin-bottom: 2em;
+    }
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 992px) {
+    .ipad-fix {
+      flex-direction: column;
+    }
+    .ant-col-sm-offset-3-cstm {
+      margin-top: 0 !important;
+    }
+  }
+}
+.pricing-hero-wrapper {
+  background: #fcf9e9;
+  border-radius: 15px;
+  @media (max-width: 767px) {
+    border-radius: 0;
+  }
+  &::before {
+    background: #fcf9e9;
+  }
+  .get-ready-to-signup {
+    h3 {
+      font-size: 58px;
+      color: #294d3b;
+      @media (max-width: 767px) {
+        font-size: 38px;
+        line-height: 38px;
+      }
+      @media (max-width: 992px) {
+        font-size: 42px;
+        line-height: 38px;
+      }
+      @media (max-width: 1200px) {
+        font-size: 42px;
+        line-height: 38px;
+      }
+    }
+    p {
+      font-size: 32px;
+      line-height: 32px;
+      color: #294d3b;
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 24px;
+      }
+      @media (max-width: 992px) {
+        font-size: 26px;
+        line-height: 24px;
+      }
+    }
+    .darkGreenBg {
+      background-color: #44805c;
+    }
+  }
+}
+.pricing-content-wrapper {
+  > div:first-child > div {
+    width: 100%;
+    @media (min-width: 767px) {
+      width: 50%;
+    }
+  }
+  > div:last-child > div {
+    width: 50%;
+    @media (min-width: 768px) {
+      width: 50%;
+      height: 100%;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+.cottage-standard-container {
+  background: #44805c;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../assets/pricing/noise.png) repeat;
+    mix-blend-mode: overlay;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  .darkGreenBg {
+    background: #102d29;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: url(../assets/pricing/noise.png) repeat;
+      mix-blend-mode: overlay;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
+  }
+  .lighterGreen {
+    background: #235c48;
+  }
+
+  &.cottage-standard-wrapper {
+    max-width: 579px;
+  }
+  &.darker-bg {
+    background: #102d29;
+  }
+  h2 {
+    font-size: 32px;
+    color: #fff;
+  }
+  p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+  > div.inner-pricing-block {
+    background: #194438;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+  }
+  .inner-pricing-block {
+    background: rgba(25, 68, 56, 0.4);
+    mix-blend-mode: normal;
+    position: relative;
+    z-index: 1;
+    flex-basis: 60%;
+    color: #fef9f5;
+
+    p {
+      color: #fef9f5;
+    }
+    .greengray {
+      color: #fef9f5;
+      opacity: 0.7;
+    }
+    &.darkercolor {
+      background: #235c48;
+    }
+    @media (min-width: 768px) {
+      min-height: 350px;
+    }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+      min-height: auto;
+    }
+  }
+  .kitchen-innercontent {
+    /*width: 90% !important;*/
+    @media (max-width: 767px) {
+      /*width: 93%!important;*/
+    }
+  }
+  .inner-pricing-block > div:first-of-type {
+    font-size: 16px;
+    span.percentage {
+      font-size: 42px;
+    }
+  }
+  .ipadfix > div:nth-child(1) {
+    @media (min-width: 1000px) {
+      flex-basis: 52%;
+    }
+  }
+  .ipadfix > div:nth-child(2) {
+    @media (min-width: 1000px) {
+    }
+  }
+}

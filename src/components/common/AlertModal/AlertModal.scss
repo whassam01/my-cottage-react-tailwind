@@ -1,0 +1,49 @@
+.schedule-item-confirmation-modal-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .confirmation-modal.ant-modal {
+    width: 35% !important;
+  }
+  .schedule-item-confirmation-modal {
+    max-width: 600px;
+  }
+  .confirmation-modal-title-info {
+    margin-bottom: 1rem;
+  }
+  .confirmation-modal-title-alert {
+    margin-bottom: 2rem;
+  }
+  .schedule-item-confirmation-modal h1 {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .schedule-item-confirmation-modal p {
+    font-weight: normal;
+    font-size: 11px;
+    color: #4c6889;
+  }
+  
+  .confirmation-modal-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .confirmation-modal-footer button {
+    min-height: 39px;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+    min-width: 100px;
+    text-align: center;
+  }
+  .confirmation-modal-footer button:first-child {
+    background-color: #c9d5e4;
+    color: #192e46;
+  }
+  .confirmation-modal-footer button:last-child {
+    background-color: #fb5a5a;
+    color: #ffffff;
+  }

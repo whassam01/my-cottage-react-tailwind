@@ -1,0 +1,24 @@
+@import "./../../../scss/tools/mixins";
+
+.all-products-and-schedule {
+  display: flex;
+  > div:first-child {
+    flex: 1;
+  }
+}
+
+.mobile-view-bottom-schedule-window {
+  margin-top: 1rem;
+  justify-content: center;
+  display: flex;
+}
+
+@include customRange(0, 767) {
+  .all-products-and-schedule {
+    place-items: center;
+    height: 40px;
+    margin-bottom: 1rem;
+    place-item: center;
+    justify-content: space-between;
+  }
+}

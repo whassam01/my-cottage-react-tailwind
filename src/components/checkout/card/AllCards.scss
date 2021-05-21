@@ -1,0 +1,91 @@
+@import "./../../../scss/settings/colors";
+
+.all-cards {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  .all-cards-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    .all-cards-head-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .all-cards-head-more {
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: $primary-color;
+      cursor: pointer;
+      user-select: none;
+      > span:nth-child(2) {
+        border: 1px solid #fb775a;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  .all-cards-body {
+    flex: 1;
+    .all-cards-body-empty {
+      border: 2px dashed #fb775a;
+      border-radius: 4px;
+      padding: 2rem 1rem;
+      background-color: #fffbfa;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .all-cards-add-payment {
+    min-height: 57px;
+    button {
+      min-height: inherit;
+      border-radius: 4px;
+      color: $primary-color;
+      background-color: #feeeea;
+      border: 1px solid #fb775a;
+      font-weight: 600;
+      img {
+        height: 11px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.show-more-card-modal {
+  .card-modal-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    h1 {
+      font-weight: 600;
+    }
+  }
+  .card-modal-select-button.card-modal-select-button-active {
+    button {
+      background-color: #fb775a !important;
+      color: #fff !important;
+    }
+  }
+  .card-modal-select-button {
+    margin-top: 2rem;
+    button {
+      min-height: 50px;
+      background-color: #c5ced7 !important;
+      color: #707c8b !important;
+      border: none;
+      border-radius: 4px;
+    }
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: #fff;
+      background: #fff;
+      border-color: #fb775a;
+    }
+  }
+}

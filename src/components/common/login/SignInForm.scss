@@ -1,0 +1,116 @@
+@import "./../../../scss/tools/mixins";
+
+.signin-form-wrapper {
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .signin-form-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #192e46;
+      text-align: center;
+      margin-bottom: 2.0rem;
+    }
+    .signin-form-description {
+      color: #657689;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 2.0rem;
+      padding: 0 1rem;
+    }
+    .signin-form-control-box {
+      > div {
+        margin-bottom: 1.3rem;
+      }
+      .signin-forgot-password {
+        cursor: pointer;
+        font-size: 0.8rem;
+        color: #fb775a;
+        font-weight: 600;
+        text-align: right;
+      }
+    }
+    .or-connect-with {
+      display: flex;
+      color: #9aa6b4;
+      font-size: 0.8rem;
+      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+      div:nth-child(3),
+      div:nth-child(1) {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 1.5rem;
+        &::after {
+          content: "";
+          flex: 1;
+          border-bottom: 1px solid #e0e4e9;
+        }
+      }
+    }
+    .social-login-buttons {
+      display: flex;
+      margin-bottom: 2rem;
+
+      button {
+        flex: 1;
+        height: 38px;
+        color: #ffffff;
+        font-weight: 600 !important;
+        font-size: 0.7rem !important;
+        border-radius: 4px;
+      }
+      .facebook-button {
+        margin-right: 10px;
+        background-color: #3b5998;
+      }
+      .twitter-button {
+        margin-left: 10px;
+        background-color: #00acee;
+      }
+    }
+    .dont-have-account {
+      text-align: center;
+      color: #657689;
+      font-size: 0.9rem;
+      span {
+        color: #fb775a;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+}
+
+@include customRange(0, 767) {
+  .or-connect-with {
+    margin: 2rem 0 !important;
+  }
+}
+@include customRange(0, 576) {
+  .social-login-buttons {
+    flex-direction: column;
+    button {
+      font-size: 1rem !important;
+      height: 50px !important;
+      flex: auto !important;
+    }
+    .facebook-button {
+      margin-right: 0 !important;
+      margin-bottom: 1rem;
+    }
+    .twitter-button {
+      margin-left: 0 !important;
+    }
+  }
+  .signin-form-control-box {
+    > div {
+      .profile-forms-input {
+        height: 50px !important;
+      }
+    }
+  }
+}

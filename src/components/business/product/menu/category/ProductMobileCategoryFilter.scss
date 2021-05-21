@@ -1,0 +1,31 @@
+.filter-button {
+  display: flex;
+  background: #4c6889 !important;
+  border-radius: 4px;
+  // padding: 2px 20px !important;
+  place-items: center;
+  height: 35px;
+  line-height: 35px;
+  border: none;
+  select {
+    width: 100%;
+    border: none;
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    border: none;
+    color: #ffffff !important;
+  }
+}
+.filter-button::before {
+  content: url(../../../../../assets//business/product/filter.svg);
+  color: #fff;
+  display: inline-block;
+  margin-top: 5px;
+  padding-left: 10px;
+  pointer-events: none;
+  place-items: flex-end;
+  display: flex;
+  height: 35px;
+  padding-right: 10px;
+}

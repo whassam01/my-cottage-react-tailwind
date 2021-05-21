@@ -1,0 +1,39 @@
+@import "../../../scss/tools/mixins";
+
+@include customRange(0, 768) {
+  #profile-tabs-table {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+  }
+  #profile-tabs-table td {
+    width: 50%;
+    order: 3;
+  }
+  #profile-tabs-table td div:before {
+    padding-right: 0px !important;
+  }
+  #profile-tabs-table td:nth-child(2) {
+    width: 50%;
+    order: 3;
+  }
+  #profile-tabs-table td:nth-child(odd) {
+    text-align: right;
+    justify-content: flex-end;
+  }
+  #profile-tabs-table td:first-child {
+    order: 1;
+    width: 90%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  #profile-tabs-table td:last-child {
+    order: 2;
+    width: 10%;
+  }
+}
+.payment-card-icons {
+  margin-right: 10px;
+}

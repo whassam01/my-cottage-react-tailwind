@@ -1,0 +1,4 @@
+export const MobileViewActionType = {
+  SET_MOBILE_VIEW: 'SET_MOBILE_VIEW',
+  SET_SHOW_MOBILE_VIEW: 'SET_SHOW_MOBILE_VIEW',
+};

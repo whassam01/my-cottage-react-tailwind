@@ -1,0 +1,69 @@
+.no-found-main .pricing-hero-404 {
+  background: #FAFAFA;
+  border-radius: 16px !important;
+}
+
+.no-found-main .pricing-hero-404::before {
+  background: none;
+}
+
+.not-found-wrapper {
+  min-height: 400px;
+  width: 100%;
+
+  font-family: 'daikon-regular';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #44805C;
+  text-align: center;
+  line-height: 1;
+}
+
+.not-found-wrapper .not-found {
+  max-width: 700px;
+  padding: 1rem;
+}
+
+.not-found-code {
+  font-size: 96px;
+
+  margin-bottom: 1rem;
+}
+
+.not-found-message {
+  font-size: 24px;
+  margin-bottom: 4rem;
+}
+
+.not-found-description {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #102D29;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.not-found-description span a {
+  color: #44805C;
+  font-weight: 600;
+}
+
+.not-found-description span a:hover {
+  text-decoration: underline;
+}
+
+.not-found-home-icon path {
+  stroke: #44805C;
+}
+
+.pricing-hero-404 {
+  background: #FAFAFA;
+  border-radius: 16px !important;
+}
+
+.pricing-hero-404::before {
+  background: none;
+
+}

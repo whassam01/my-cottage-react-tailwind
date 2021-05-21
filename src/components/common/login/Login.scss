@@ -1,0 +1,223 @@
+@import "./../../../scss/tools/mixins";
+
+.auth-page-container {
+  /* background-image: url("../assets/auth/background.svg"); */
+  height: 100%;
+  background-color: #fb775a;
+  background-size: cover;
+}
+
+.sign-up-card-container .ant-tabs-nav {
+  width: 100%;
+}
+
+.sign-up-card-container .ant-tabs-tab {
+  width: 50%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  text-align: center;
+  margin-right: 0px !important;
+  height: 70px !important;
+}
+
+.sign-up-card-container .ant-tabs-nav-container {
+  height: 70px !important;
+}
+
+.sign-up-card-container .ant-tabs-tab {
+  line-height: 70px !important;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 18px;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #959dad;
+}
+
+.sign-up-card-container .ant-tabs-tab-active {
+  color: #192e46 !important;
+}
+
+.sign-up-card-container .ant-tabs-tab:hover {
+  color: #192e46 !important;
+}
+
+.sign-up-modal .ant-modal-body {
+  padding: 60px 35px;
+}
+
+.sign-up-card-container .ant-tabs-bar {
+  margin-bottom: 0px !important;
+  border-bottom: none !important;
+}
+
+.sign-up-card-container .ant-tabs-content {
+  border: 1px solid #d4d7dd;
+}
+
+.sign-up-form-bottom-text {
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 18px; */
+
+  letter-spacing: 0.01em;
+
+  color: #192e46;
+}
+
+.signup-facebook-button.dashboard-add-button {
+  background-color: #3b5998 !important;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.signup-twitter-button.dashboard-add-button {
+  background-color: #00acee !important;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.signup-social-media-form .ant-divider-inner-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  /* font-size: 18px; */
+
+  letter-spacing: 0.02em;
+
+  color: #9aa6b4;
+}
+
+// .signup-verification-container {
+//   border: 1px solid #d4d7dd;
+//   padding: 30px 35px;
+// }
+
+.signup-verification-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 18px; */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #192e46;
+}
+
+// .signup-verification-container .dashboard-input-form-title {
+//   margin-bottom: 10px !important;
+// }
+
+.sign-in-form-bottom-text {
+  float: right;
+}
+
+.sign-in-form-bottom-text span {
+  cursor: pointer;
+}
+
+.forgot-password-form-bottom-text {
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 18px; */
+
+  letter-spacing: 0.01em;
+
+  color: #fb775a;
+}
+
+.forgot-password-form-bottom-text div > span {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sign-up-modal .ant-modal-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sign-in-form-bottom-text {
+    float: unset;
+    text-align: center;
+  }
+
+  .sign-up-pane {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.login-modal-content {
+  width: 60%;
+  padding: 2rem;
+  margin: 0 auto;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ant-input:focus,
+  .ant-input-focused {
+    box-shadow: none;
+    border-color: #fb775a !important;
+  }
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    box-shadow: none;
+    border-color: #fb775a !important;
+  }
+  .ant-input {
+    height: 38px;
+  }
+  .ant-input-password {
+    height: 38px;
+    .ant-input {
+      height: auto;
+    }
+  }
+
+  .ant-input:hover {
+    border-color: #fb775a !important;
+  }
+  .ant-input-password:hover {
+    border-color: #fb775a !important;
+  }
+}
+
+.login-modal {
+  max-width: 900px !important;
+  width: 100% !important;
+  .cottage-home-icon {
+    text-align: center;
+    svg {
+      cursor: pointer;
+    }
+  }
+}
+
+@include customRange(0, 576) {
+  .login-modal-content {
+    padding: 2rem 0;
+    .ant-input {
+      height: 50px !important;
+    }
+    .ant-input-password {
+      height: 50px !important;
+      .ant-input {
+        height: auto !important;
+      }
+    }
+  }
+}
+
+@include customRange(0, 768) {
+  .login-modal-content {
+    width: 100%;
+  }
+}

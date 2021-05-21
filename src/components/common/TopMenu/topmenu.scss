@@ -1,0 +1,37 @@
+/*.scrolled {
+  position: -webkit-sticky;  Safari
+  position: sticky;
+}
+*/
+.cottage-menu-clicked {
+  width: 247px;
+  margin-left: 8px;
+  margin-top: -4px;
+}
+.site-page-header-ghost-wrapper {
+  transform: translateY(0);
+  transition: transform 0.6s ease;
+  @media (max-width: 767px) {
+    background: transparent !important;
+  }
+}
+@media (min-width: 768px) {
+  .scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white !important;
+    margin-top: 0 !important;
+    .nav-inner {
+      padding: 10px 0;
+    }
+  }
+}
+.text-dark {
+  color: #235c48 !important;
+}
+@media screen and (max-width: 768px) {
+  .text-dark {
+    color: #fff !important;
+  }
+}

@@ -1,0 +1,91 @@
+@import "./../../../scss/tools/mixins";
+
+.order-summary-wrapper {
+  max-width: 500px;
+  flex: 0.5;
+  background: #ffffff;
+  font-size: 0.9rem;
+  max-height: calc(100vh - 60px);
+  > .order-summary {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    .order-summary-delivery-date {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .order-summary-delivery-duration {
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 0.8rem;
+    }
+    .order-summary-content {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .order-summary-title {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 2.125rem;
+        margin: 3rem 3rem 1rem 3rem;
+      }
+      .order-summary-address {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 0.9rem;
+        margin: 0 3rem 2rem 3rem;
+      }
+      .order-summaries-list-scrollable {
+        flex: 1;
+        overflow: auto;
+        padding: 0 3rem;
+      }
+    }
+  }
+}
+
+.order-summary-product {
+  display: flex;
+  color: #4c6889;
+  text-shadow: 0 0;
+  margin-bottom: 0.5rem;
+  > div:first-child {
+    text-align: left;
+  }
+  > div:nth-child(2) {
+    text-align: left;
+    margin: 0 0.9rem;
+    flex: 1;
+  }
+  > div:last-child {
+    text-align: right;
+  }
+}
+
+.checkout-orders-subtotal-data-row {
+  display: flex;
+  text-shadow: 0 0;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  > div {
+    flex: 1;
+  }
+  > div:last-child {
+    text-align: right;
+  }
+  &-green {
+    color: #57b14f;
+  }
+  &:last-child {
+    font-weight: bold;
+    margin-top: 1.1rem;
+  }
+}
+
+@include customRange(0, 767) {
+  .order-summary-wrapper {
+    display: none;
+  }
+}

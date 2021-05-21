@@ -1,0 +1,94 @@
+.order-item-detail {
+  position: relative;
+  border: 1px solid #eef0f1;
+  border-radius: 3px;
+  display: flex;
+}
+.order-item-detail-customer-info {
+  flex: 1;
+  padding: 1.5rem;
+}
+.order-item-detail-order-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.order-item-detail-customer-info-name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.order-item-detail-order-info-row {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  color: #192e46;
+}
+.order-item-detail-order-info-row.row-1 {
+  margin-bottom: 0.5rem;
+}
+
+.order-item-detail-order-info-row > div {
+  flex: 1;
+}
+.order-item-detail-order-info-row > .order-amount {
+  display: flex;
+  justify-content: flex-end;
+}
+.order-item-detail-order-info-row > .order-quantity {
+  display: flex;
+  justify-content: center;
+}
+.order-item-detail-order-info-row p,
+.order-item-detail-order-info-row p h3 {
+  line-height: 1;
+  margin: 0;
+}
+.order-item-detail-order-info-row p {
+  font-weight: 600;
+  font-size: 0.64rem;
+}
+.order-item-detail-order-info-row h3 {
+  color: #000000;
+}
+
+.order-item-detail-order-info-div-2 > .order-item-detail-order-info-row div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.order-item-detail-order-info-div-2 > .order-item-detail-order-info-row.total div:last-child h3 {
+  margin-bottom: 4px;
+}
+.order-item-detail-order-info-row.subtotal-row {
+  margin-top: 1rem;
+}
+.order-item-detail-order-info-row.subtotal-row h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.order-item-detail-order-info-row.total {
+  margin-top: 1rem;
+}
+.order-item-detail-order-info-row.total h1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.order-detail-close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.vertival-divider-div {
+  border: 1px solid #eef0f1;
+  margin: 1.5rem 0;
+}
+.vertival-divider-div.now-horiznotal-in-mobile {
+  margin: 1rem 1rem;
+}

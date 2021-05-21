@@ -1,0 +1,32 @@
+.dashboard-form-input-error-box {
+  background-color: #ffe2e2 !important;
+  border: 1px solid #feaaaa;
+  border-radius: 3px !important;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px !important;
+
+  letter-spacing: 0.02em;
+  margin-top: 20px !important;
+  color: #fb5a5a !important;
+}
+.ant-card.dashboard-form-input-error-box.undefined {
+  width: 100% !important;
+}
+
+.dashboard-form-input-error-box .ant-card-body {
+  padding-left: 18px !important;
+  padding-right: 7px !important;
+  padding-top: 14px !important;
+  padding-bottom: 15px !important;
+}
+
+.dashboard-form-input-error-box .error-icon {
+  margin-top: 3px;
+}
+
+.dashboard-form-input-error-box .ant-row {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,80 @@
+//scss theme import
+@import "~antd/dist/antd.css";
+
+//generic and overridden styles
+@import "./generic/normalize";
+@import "./generic/reset";
+
+//theme setting vars
+@import "./settings/colors";
+@import "./settings/fonts";
+@import "./settings/global";
+
+//tools
+@import "./tools/mixins";
+
+@include customRange(0, 700) {
+  .loginContainer {
+    text-align: center;
+    top: 80px;
+    right: 0;
+    left: 0;
+  }
+}
+.loginContainer {
+  position: absolute;
+  top: 39px;
+  right: 50px;
+  font-weight: 400;
+}
+
+.loginContainer .signUpLink {
+  margin-right: 25px;
+}
+
+.loginContainer a:link,
+.loginContainer a:visited {
+  color: #fff;
+  text-decoration: none;
+  transition: all 200ms ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.loginContainer a:hover,
+.loginContainer a:active {
+  border-bottom: 1px solid #fff;
+}
+
+.loginContainer .fal {
+  margin-right: 10px;
+}
+
+.inputText {
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 12pt;
+  font-weight: 200;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  transition: border 200ms ease;
+  -webkit-appearance: none;
+}
+
+.inputText:focus {
+  border: 1px solid #00c5a7;
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+.ant-tabs-ink-bar {
+  background-color: #4c6889;
+}

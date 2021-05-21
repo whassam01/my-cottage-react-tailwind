@@ -1,0 +1,15 @@
+.dashboard-input-phone-number {
+  background-color: #ffffff;
+  border: 1px solid #e0e4e9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #192e46;
+  padding-left: 12px;
+  height: 40px;
+  width: 100%;
+}

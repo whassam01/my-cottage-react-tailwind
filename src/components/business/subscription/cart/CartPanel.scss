@@ -1,0 +1,81 @@
+@import "../../../../scss/settings/colors";
+@import "../../../../scss/tools/mixins";
+
+/*
+Commented which is affecting the marketing pages
+------------------------------------------------
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+*/
+.Plans-cart-total,
+.Plans-cart-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: $sub-heading-color;
+}
+.Plans-cart-meal {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: $sub-heading-color;
+}
+.Plans-cart-header-items {
+  display: flex;
+  color: $color;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.cart-header-address {
+  padding: 0px 0px;
+}
+.Plans-cart-total {
+  color: $color;
+  margin: 2rem 0rem !important;
+}
+.plans-cart-detail {
+  margin-bottom: 1rem;
+}
+.payment-note {
+  color: #9caec2;
+  font-size: 0.8rem;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 1em 0rem;
+}
+.empty-business-cart-box {
+  background-color: rgba(255, 251, 250, 0.2);
+  color: $sub-heading-color;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.5rem 0rem;
+  line-height: 27px;
+  text-align: center;
+  border: 1.25049px dashed rgba(251, 119, 90, 0.2);
+  border-radius: 2.50098px;
+}
+.subscription-plans-card {
+  font-family: Poppins;
+  .primary-button {
+    height: 42px !important;
+    font-size: 0.9rem !important;
+  }
+  h1.ant-typography {
+    font-size: 2rem !important;
+  }
+}
+@include customRange(0, 768) {
+  .Plans-cart-total,
+  .Plans-cart-title {
+    font-size: 1.2rem;
+  }
+  .Plans-cart-meal {
+    font-size: 0.9rem;
+  }
+  .subscription-plans-card .primary-button {
+    height: 50px !important;
+    font-size: 1rem !important;
+  }
+}

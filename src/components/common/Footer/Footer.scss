@@ -1,0 +1,33 @@
+@import "./../../../scss/tools/mixins";
+.default-footer-wrapper {
+  background-color: #ffffff;
+  color: #235C48;
+  font-weight: 700;
+  width: 100%;
+ 
+    div.text-darkgreen, a {
+      color: #294D3B;
+    }
+  
+}
+.footer-home-icon {
+  background: url("./../../../assets/common/footer-logo.svg") no-repeat center center;
+  width: 100px;
+  height: 100px;
+}
+@include customRange(0, 567) {
+
+}
+@include customRange(0, 767) {
+ 
+}
+
+@include customMaxHeightWidth(767, 800) {
+  
+}
+
+@include customMaxHeightWidth(767, 568) {
+  .home-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,258 @@
+body {
+  background-color: #fff;
+}
+
+.nav-bar {
+
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.nav-bar-scroll .nav-inner,
+.nav-bar-scroll .nav-bar {
+  background: #fff;
+}
+
+nav li .ant-divider {
+  background-color: #235C48;
+}
+
+nav ul li a:hover {
+  color: #235C48;
+}
+
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a.nav-active:after,
+nav ul li a:hover:after,
+.login:hover:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 32px;
+  ;
+  background: #102D29;
+  left: 50%;
+  margin-left: -15px;
+  bottom: 0;
+
+}
+
+.marketing-page .sectionhome {
+  padding: 0 !important;
+}
+
+.login,
+.login:hover,
+.login:active,
+.login:focus {
+  font-size: 16px;
+  line-height: 40px !important;
+  height: 40px;
+  color: #235C48;
+  letter-spacing: -0.01em;
+  font-family: 'daikon-bold';
+  font-weight: 700;
+  box-shadow: none !important;
+  transition: none;
+  -webkit-transition: none;
+  padding: 0 15px;
+  position: relative;
+}
+
+.signup {
+  background: #235C48 !important;
+  width: 113px !important;
+  height: 48px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+#menu ul li a {
+  color: #fff;
+  font-weight: 400;
+  font-family: 'daikon-bold';
+  letter-spacing: -0.01em;
+}
+
+.marketing-page .scrolled #menu ul li a,
+.marketing-page .scrolled,
+.marketing-page .scrolled .login,
+.featurepage .scrolled #menu ul li a,
+.featurepage .scrolled,
+.featurepage .scrolled .login,
+.pricingpage .scrolled #menu ul li a,
+.pricingpage .scrolled,
+.pricingpage .scrolled .login,
+.aboutuspage .scrolled #menu ul li a,
+.aboutuspage .scrolled,
+.aboutuspage .scrolled .login {
+  color: #235C48;
+  background-color: #fff !important;
+}
+
+
+
+@media(min-width:768px) {
+
+  .nav-inner {
+    width: 1400px;
+  }
+
+  #menu ul li a {
+    color: #235C48;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .signup {
+    background: #235C48;
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .login {
+    font-size: 14px;
+
+    line-height: 36px;
+    color: #235C48;
+
+  }
+
+  .marketing-page #menu ul li a {
+    color: #fff;
+  }
+
+  .marketing-page .login {
+    color: #fff;
+  }
+
+  .marketing-page .scrolled #menu ul li a,
+  .marketing-page .scrolled,
+  .featurepage .scrolled #menu ul li a,
+  .featurepage .scrolled {
+    color: #235C48;
+  }
+
+  .greenlogo {
+    display: block;
+  }
+
+  .whitelogo {
+    display: none;
+  }
+
+  .marketing-page .whitelogo {
+    display: block;
+  }
+
+  .marketing-page .greenlogo {
+    display: none !important;
+  }
+
+  .marketing-page .scrolled .whitelogo {
+    display: none;
+  }
+
+  .marketing-page .scrolled .greenlogo {
+    display: block !important;
+  }
+
+}
+
+@media(min-width:992px) {
+  #menu ul li a {
+    color: #235C48;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .login {
+    font-size: 16px;
+    line-height: 40px;
+    color: #235C48;
+    letter-spacing: -0.01em;
+    font-family: 'daikon-bold';
+    font-weight: 700;
+    box-shadow: none !important;
+  }
+
+  .signup {
+    background: #235C48;
+    width: 113px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .signup:hover {
+    background: #235C48;
+    opacity: 0.8;
+  }
+}
+
+@media(min-width:1200px) {
+  .nav-inner {
+    width: 1400px !important;
+  }
+}
+
+@media(max-width:767px) {
+
+
+  nav ul li a.nav-active:after,
+  nav ul li a:hover:after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 5px;
+    ;
+    background: #fff;
+    left: 20px;
+    margin-left: -15px;
+    top: 18px;
+    border-radius: 5px;
+  }
+
+  #menu-toggle:checked+#menu {
+    display: block !important;
+    height: 1000px !important;
+  }
+
+  .marketing-page .scrolled #menu ul li a,
+  .featurepage .scrolled #menu ul li a,
+  .pricingpage .scrolled #menu ul li a,
+  .aboutuspage .scrolled #menu ul li a {
+    background: none !important;
+    color: #fff;
+  }
+
+  #menu .signup {
+    background: #102D29 !important;
+    width: auto !important;
+  }
+
+  .brandcolor {
+    background: #235C48;
+  }
+
+  .marketing-page .scrolled .greenlogo,
+  .featurepage .scrolled .greenlogo,
+  .featurepage .greenlogo,
+  .pricingpage .greenlogo,
+  .aboutuspage .greenlogo {
+    display: block !important;
+  }
+
+  .marketing-page .scrolled .whitelogo,
+  .featurepage .whitelogo,
+  .pricingpage .whitelogo,
+  .aboutuspage .whitelogo {
+    display: none !important;
+  }
+
+}

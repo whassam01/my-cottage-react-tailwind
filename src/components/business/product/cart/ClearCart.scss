@@ -1,0 +1,55 @@
+@import "../../../../scss/tools/mixins";
+
+.delivery-address-warning-modal {
+  max-width: 600px;
+  .warning-modal-content {
+    padding: 3rem;
+    .warning-modal-title {
+      font-size: 1.5rem;
+      color: #192e46;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .warning-modal-info {
+      color: black;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .warning-modal-buttons {
+      display: flex;
+      button {
+        flex: 1;
+      }
+      button:first-child {
+        margin-right: 10px;
+        color: #192e46 !important;
+        background-color: #c9d5e4 !important;
+      }
+      button:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@include customRange(0, 768) {
+  .warning-modal-content {
+    padding: 1rem !important;
+  }
+}
+@include customRange(0, 576) {
+  .warning-modal-content {
+    padding: 1rem 0 !important;
+    .warning-modal-buttons {
+      display: block !important;
+      button:first-child {
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+      }
+      button:last-child {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}

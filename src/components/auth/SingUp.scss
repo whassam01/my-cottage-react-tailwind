@@ -1,0 +1,161 @@
+@import './../../scss/tools/mixins';
+
+.home-container {
+  font-family: 'daikon-regular';
+}
+
+.header-bg .ant-row {
+  @media (max-width: 767px) {
+    margin: 0 0 !important;
+    flex-direction: column-reverse;
+  }
+}
+.signup-mission {
+  padding-top: 60px;
+  background: #44805c;
+
+  .hero-content-wrapper {
+    background: none !important;
+  }
+  .subtitle {
+    color: #fff !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-feature-settings: 'salt' on;
+  }
+  .section-description {
+    margin-top: 27px;
+    color: #fff !important;
+    font-style: normal;
+    // width: 556px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    font-feature-settings: 'salt' on;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    p {
+      width: 556px;
+    }
+    .our-mission-hills {
+      top: 40px !important;
+    }
+  }
+  @media (max-width: 767px) {
+    height: auto;
+  }
+}
+.confirm-mission {
+  padding-top: 60px;
+  background: radial-gradient(50% 78.62% at 50% 87.71%, rgba(228, 238, 247, 0.25) 0%, #e4eef7 100%);
+  .hero-content-wrapper {
+    background: none !important;
+  }
+  .subtitle {
+    color: #30644a !important;
+    margin-top: 20px;
+    line-height: initial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-feature-settings: 'salt' on;
+  }
+  .section-description {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    font-feature-settings: 'salt' on;
+    color: #294c3b !important;
+    opacity: 0.8;
+  }
+  @media (max-width: 767px) {
+    height: auto;
+  }
+}
+.joinList {
+  background: #235c48 !important;
+  width: fit-content !important;
+  padding: 0 20px 0 20px;
+  height: 48px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.joinEmail {
+  width: 427px;
+  background: #294d3b !important;
+  height: 48px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+.input-container {
+  margin-top: 5px;
+  display: inline-flex;
+  flex-direction: column;
+}
+// @media screen and (min-width: 425px) {
+//   .joinList {
+//     margin-top: 10px;
+//   }
+// }
+@media screen and (max-width: 400px) {
+  .joinEmail {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .joinList {
+    margin-top: 10px !important;
+  }
+  .input-container {
+    width: min-content;
+  }
+  .joinEmail {
+    max-width: 300px;
+  }
+  .confirm-mission,
+  .signup-mission {
+    .section-description {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    .subtitle {
+      font-size: 36px !important;
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+  }
+  .input-label {
+    margin-bottom: 5px;
+  }
+  .email-div {
+    text-align: left;
+  }
+  .section {
+    padding: 15px;
+    .signup-mission {
+      border-radius: 16px;
+    }
+    .confirm-mission {
+      border-radius: 16px;
+    }
+  }
+  .signup-mission {
+    .hero-content-wrapper {
+      padding: 25px !important;
+      background: none !important;
+    }
+  }
+}

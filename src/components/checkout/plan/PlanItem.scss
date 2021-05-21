@@ -1,0 +1,58 @@
+.plan-item-wrapper {
+  flex: 1;
+  .checkout-divider {
+    margin: 2.5rem 2rem;
+  }
+  .plan-item {
+    margin: 0 2rem;
+    .plan-item-head {
+      font-weight: 600;
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .order-item-body {
+      background-color: #ffffff;
+      .order-item-title-meals {
+        margin-bottom: 2rem;
+
+        .order-item-title {
+          font-weight: 600;
+          font-size: 1.2rem;
+          margin-bottom: 0.8rem;
+        }
+        .order-item-meals {
+          font-weight: 600;
+          font-size: 1rem;
+        }
+      }
+      .order-item-subtotal-data-row:first-child {
+      }
+      .order-item-subtotal-data-row:last-child {
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .order-item-subtotal-data-row {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-shadow: 0 0;
+        font-weight: 500;
+      }
+      .order-item-total-amount {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: right;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        > div {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

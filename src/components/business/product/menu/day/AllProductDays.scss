@@ -1,0 +1,119 @@
+@import "./../../../../../scss/tools/mixins";
+.product-day-item-wrapper::-webkit-scrollbar {
+  display: none !important;
+  scrollbar-width: none;
+}
+.product-day-item-wrapper {
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  font-weight: 600;
+  justify-content: space-between;
+}
+.product-day-item-title {
+  font-size: 0.7rem;
+  color: #4c6889;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0.8rem;
+}
+.product-offer-time {
+  font-size: 0.8rem !important;
+}
+.product-item-footer-buttons-wrapper {
+  > div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .product-offer-item-time {
+      @include customRange(0, 767) {
+        margin-right: 0 !important;
+      }
+      .product-offer-item-day-cards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      h3 {
+        font-size: 0.7rem;
+        color: #4c6889;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 0.8rem;
+      }
+    }
+    .product-offer-item-quantity {
+      margin-right: 1rem;
+      .ant-input {
+        min-height: 30px;
+        max-width: 45px;
+        text-align: center;
+        border-radius: 4px;
+      }
+      h3 {
+        font-size: 0.7rem;
+        color: #4c6889;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 0.8rem;
+      }
+    }
+    .product-offer-item-button {
+      .ant-btn[disabled] {
+        color: rgba(0, 0, 0, 0.25) !important;
+        background: #f5f5f5 !important;
+        border-color: #d9d9d9 !important;
+      }
+      .ant-btn:hover,
+      .ant-btn:focus {
+        color: #ffffff;
+        background: #fb775a;
+        border-color: transparent;
+      }
+    }
+  }
+}
+@include customRange(0, 767) {
+  .product-item-footer-buttons-wrapper > div {
+    flex-direction: column;
+  }
+  .product-offer-item-time {
+    width: 100%;
+  }
+  .product-offer-item-quantity .ant-input {
+    max-width: 60px !important;
+  }
+  .product-offer-item-quantity {
+    .ant-input-group-addon {
+      padding: 0 !important;
+      background-color: #ffffff;
+      border-color: #fb775a;
+      border-radius: 4px;
+      &:first-child {
+        border-right: none;
+      }
+      &:last-child {
+        border-left: none;
+      }
+      div {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+    .ant-input {
+      border-width: 1px 0 1px 0;
+      color: #192e46;
+      border-color: #fb775a;
+      font-weight: 600;
+      font-size: 0.6rem !important;
+    }
+  }
+  .product-offer-item-day-cards {
+    margin-bottom: 1rem;
+  }
+  .product-offer-quantity-wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+}

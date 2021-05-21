@@ -1,0 +1,50 @@
+.about-hero-wrapper {
+  background: #fff url("../assets/about/aboutnewmap.png") no-repeat center top;
+  background-size: cover;
+  &::before {
+    background: none;
+  }
+  .darkColor {
+    color: #102d29;
+    font-family: "daikon-regular";
+  }
+}
+.connecting-people {
+  .connecting-people-title {
+    font-size: 32px;
+  }
+  .connecting-block {
+    height: 284px;
+    .connecting-subtitle {
+      background: #102d29;
+      letter-spacing: 0.15em;
+      white-space: nowrap;
+    }
+  }
+}
+
+.contactFormWrapper {
+  .contact-title {
+    font-size: 58px;
+    color: #294d3b;
+  }
+}
+.contactForm {
+  color: #294d3b;
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 3px solid #e6e8e5;
+    border-radius: 8px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    height: 50px;
+  }
+  button {
+    background: #235c48;
+    border-radius: 8px;
+    height: 40px;
+    line-height: 40px;
+  }
+}

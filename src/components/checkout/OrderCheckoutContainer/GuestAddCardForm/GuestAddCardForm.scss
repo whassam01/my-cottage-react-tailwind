@@ -1,0 +1,9 @@
+.guest-checkout-payment-step-body {
+  .StripeElement--empty,
+  .StripeElement--complete,
+  .StripeElement--focus,
+  .StripeElement--invalid,
+  .StripeElement--webkit-autofill {
+    border: none !important;
+  }
+}

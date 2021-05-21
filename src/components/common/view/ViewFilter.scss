@@ -1,0 +1,40 @@
+.view-filter-wrapper {
+  .filter-menu .dropdown-title,
+  .filter-menu .number-of-views {
+    font-family: Poppins;
+    font-style: normal;
+    letter-spacing: 0.07em;
+    font-size: 10px;
+  }
+  .dropdown-title {
+    font-weight: 500;
+    line-height: 13px;
+    text-align: center;
+    color: #9aa6b4;
+    padding-right: 10px;
+  }
+
+  .number-of-views {
+    font-weight: 600;
+    line-height: 15px;
+    text-align: right;
+    color: #4c6889;
+  }
+  .view-button {
+    height: 30.3px;
+    border-radius: 2.50077px;
+    background: #ffffff;
+    padding-right: 15px;
+    font-size: 12px;
+    padding: 0px 5px;
+    height: 32px;
+  }
+  .shivron-icon {
+    width: 12px;
+    height: 5px;
+    margin-top: -1px;
+  }
+  .view-menu {
+    width: 70px;
+  }
+}

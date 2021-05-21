@@ -1,0 +1,80 @@
+@import "./../../../scss/settings/colors";
+@import "./../../../scss/tools/mixins";
+
+.all-address {
+  .all-address-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    .all-address-head-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .all-address-head-more {
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: $primary-color;
+      cursor: pointer;
+      user-select: none;
+      > span:nth-child(2) {
+        border: 1px solid #fb775a;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+
+  .all-address-add-address {
+    min-height: 57px;
+    button {
+      min-height: inherit;
+      border-radius: 4px;
+      color: $primary-color;
+      background-color: #feeeea;
+      border: 1px solid #fb775a;
+      font-weight: 600;
+      img {
+        height: 11px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.show-more-address-modal {
+  .card-address-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    h1 {
+      font-weight: 600;
+    }
+  }
+  .address-modal-select-button.address-modal-select-button-active {
+    button {
+      background-color: #fb775a !important;
+      color: #fff !important;
+    }
+  }
+  .address-modal-select-button {
+    margin-top: 2rem;
+    button {
+      min-height: 50px;
+      background-color: #c5ced7 !important;
+      color: #707c8b !important;
+      border: none;
+      border-radius: 4px;
+    }
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: #fff;
+      background: #fff;
+      border-color: #fb775a;
+    }
+  }
+}
+@include customRange(0, 767) {
+  .all-address-head-title,
+  .all-cards-head-title {
+    font-size: 1.1rem !important;
+  }
+}

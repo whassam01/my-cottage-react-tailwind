@@ -1,0 +1,123 @@
+@import "../../../../scss/tools/mixins";
+
+.product-card {
+  font-family: Poppins;
+  .ant-card-body {
+    padding: 0px;
+  }
+  .empty-business-cart-box {
+    margin: 24px 40px;
+  }
+  .product-schedule-item {
+    padding: 10px 40px;
+    border: 1px solid #ffffff;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  .business-cart-bin {
+    margin-right: 10px;
+  }
+  .product-card-footer {
+    .primary-button {
+      font-size: 0.7rem !important;
+    }
+  }
+  .product-card-footer,
+  .cottage-large-title {
+    padding: 24px 40px;
+  }
+  .product-card-header,
+  .cottage-large-title {
+    padding: 10px 40px;
+  }
+  .cottage-edit-button-container {
+    place-items: center;
+    height: auto !important;
+  }
+  .product-cart-offer-item {
+    font-weight: 500;
+    font-size: 14px;
+    color: #4c6889;
+    // line-height: 30px;
+  }
+  .offer-item-estimated {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 0.5rem;
+    letter-spacing: 0.03em;
+
+    color: #192e46;
+  }
+  .cart-edit-effect,
+  .product-schedule-item:hover {
+    background: #f6f8fa;
+    border: 1px solid #e6eaee;
+  }
+  .product-cart-item-quantity {
+    align-items: center;
+    .product-offer-quantity {
+      margin-right: 15px;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      color: #fb775a;
+      width: 35px;
+      height: 28px;
+      padding: 4px 11px;
+      border: 1px solid #ffffff;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .Plans-cart-total {
+    margin: 0rem 0rem 0.5rem 0rem !important;
+  }
+}
+.edit-offer-quantity {
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+  input:focus {
+    outline: none !important;
+  }
+  *:focus {
+    outline: 0;
+  }
+  input {
+    background: #ffffff;
+    border: 1px solid #e0e4e9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #fb775a;
+    text-align: center;
+    margin-right: 15px;
+    outline: none;
+    padding: 0;
+    box-shadow: none !important;
+    width: 35px;
+    height: 28px;
+    font-size: 14px;
+  }
+  input:focus,
+  input:hover {
+    border: 1px solid #fb775a;
+  }
+}
+@include customRange(0, 768) {
+  .product-card .product-schedule-item,
+  .product-card-footer,
+  .cottage-large-title {
+    padding: 14px 15px !important;
+  }
+  .empty-business-cart-box {
+    margin: 14px 15px !important;
+  }
+  .Cart-modal {
+    .product-card-header {
+      padding: 0px 15px !important;
+    }
+  }
+}

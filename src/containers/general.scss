@@ -1,0 +1,382 @@
+@import "../scss/settings/height";
+@import "../scss/tools/mixins";
+
+$text-color: #768ca5;
+$button-text-color: white;
+$heading-color: #192e46;
+$primary-color: #fb775a;
+$secondary-color: #4c6889;
+$background-color: #f6f8fa;
+$disabled-button-color: #bcc6d3;
+
+.account {
+  background: $background-color;
+  min-height: 100%;
+  .ant-row {
+    place-items: baseline;
+  }
+}
+.business {
+  background: #ffffff;
+  min-height: 100%;
+}
+.checkout-content-wrapper {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  > div:first-child {
+    flex: 1;
+    max-height: calc(100vh - 60px);
+    overflow: auto;
+  }
+  .mobileview-order-checkout-fixed {
+    margin-top: 4rem;
+    display: none;
+    .order-checkout-wrapper {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  .checkout-step-4 {
+    max-width: 500px;
+    .step-4-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .order-checkout-wrapper {
+      background-color: transparent;
+      .order-checkout-input-code-input-control {
+        input {
+          min-height: 60px !important;
+        }
+      }
+      .order-checkout-input-code-apply-button {
+        max-width: 150px;
+        min-width: 100px;
+        width: 15%;
+        button {
+          min-height: 60px !important;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.body-wrapper {
+  padding-top: ($headerHeight + 0px) !important;
+}
+.account-container {
+  margin-top: 20px;
+  width: 70%;
+  margin: auto;
+  .cottage-large-title {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.cottage-blue-button {
+  background-color: $secondary-color !important;
+}
+
+.cottage-orange-button {
+  background-color: $primary-color !important;
+}
+
+.cottage-orange-button,
+.cottage-blue-button {
+  border-radius: 3px !important;
+  height: 38px !important;
+  color: $button-text-color;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 11.25px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.cottage-radio-button,
+.cottage-radio-button .ant-radio-button {
+  box-sizing: border-box;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.cottage-radio-button .ant-radio-button-wrapper {
+  color: $disabled-button-color;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.cottage-radio-button .ant-radio-button-wrapper:hover {
+  color: $secondary-color;
+}
+.cottage-radio-button .ant-radio-button-wrapper.ant-radio-button-wrapper-disabled:hover {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.cottage-radio-button .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled),
+.cottage-radio-button
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
+.cottage-radio-button
+  .ant-radio-button-wrapper-checked:not([class*=" ant-radio-button-wrapper-disabled"]).ant-radio-button-wrapper:first-child {
+  background-color: #fff5f2;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+}
+
+.cottage-input-form-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 27px !important;
+  color: $heading-color !important;
+  text-align: center;
+  margin-bottom: 50px !important;
+}
+
+.cottage-modal .ant-modal-body {
+  padding-top: 69px;
+  padding-bottom: 64px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.cottage-container-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px !important;
+  place-items: center;
+  .ant-btn.secondary-button {
+    padding: 10px;
+    width: 110px !important;
+  }
+  .cottage-tabs-title {
+    h1 {
+      font-family: Poppins;
+      font-style: normal;
+      letter-spacing: -0.01em;
+      font-size: 1.2rem !important;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+}
+
+.cottage-container-row .cottage-blue-button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.cottage-dropdown-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px !important;
+  letter-spacing: -0.01em;
+  color: $heading-color;
+  margin-bottom: 0px !important;
+}
+
+.cottage-medium-title {
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;
+}
+
+.cottage-large-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.cottage-large-title,
+.cottage-medium-title {
+  font-family: Poppins;
+  font-style: normal;
+  letter-spacing: -0.01em;
+
+  color: $heading-color !important;
+  margin-bottom: 5px !important;
+  margin-top: 20px;
+}
+
+.cottage-input-select .ant-select,
+.cottage-input-select .ant-select-selection {
+  height: 41px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#cottage-tabs {
+  .ant-tabs-tab,
+  .ant-tabs-tab.ant-tabs-tab-active {
+    color: $secondary-color;
+    font-size: 1rem !important;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active {
+    font-weight: 800;
+  }
+  .ant-tabs-tab:hover {
+    color: $secondary-color;
+  }
+  .ant-tabs-ink-bar {
+    background: $secondary-color;
+  }
+  .ant-tabs-top > .ant-tabs-nav::before,
+  .ant-tabs-top > div > .ant-tabs-nav::before {
+    border-bottom: 1px solid #768ca5;
+    opacity: 0.2;
+  }
+}
+
+.mb-2 {
+  margin-bottom: 20px !important;
+}
+.dashboard-form-title {
+  font-family: Poppins;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  line-height: 38px !important;
+  text-align: center;
+  padding-bottom: 30px;
+  letter-spacing: -0.02em;
+  color: #192e46 !important;
+}
+
+// General Forms classes
+.profile-input-select .ant-select,
+.profile-input-select .ant-select-selection {
+  height: 41px;
+}
+// some classes targeted directly to go through flow
+.ant-input.profile-forms-input.error-form,
+.error-form,
+.ant-select.error-form {
+  border: 1px solid red !important;
+}
+.ant-input-password.profile-forms-input.error-form,
+.error-form,
+.ant-select.error-form {
+  border: 1px solid red !important;
+}
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  border: none !important;
+  display: flex;
+  align-items: center;
+}
+.ant-input.profile-forms-input,
+.ant-input-affix-wrapper.profile-forms-input {
+  height: 40px;
+}
+.ant-input.profile-forms-input,
+.ant-input-affix-wrapper.profile-forms-input,
+.ant-select {
+  background: #ffffff;
+  width: 100%;
+  border: 1px solid #e0e4e9 !important;
+  border-radius: 4px !important;
+  font-weight: 500;
+  padding: 4px 11px !important;
+  color: #192e46 !important;
+  letter-spacing: 0.02em;
+  font-size: 0.8rem !important;
+}
+.ant-row.Dashboard-forms-container .ant-typography {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  color: #768ca5;
+  margin-bottom: 7px;
+}
+.form-modal-wrapper .ant-modal-body {
+  padding: 50px;
+}
+.form-modal-wrapper .ant-upload.ant-upload-select-picture-card {
+  display: block !important;
+}
+//
+@include customRange(0, 767) {
+  .checkout-content-wrapper {
+    > div:first-child {
+      max-height: initial;
+    }
+    .checkout-divider {
+      display: none;
+    }
+    .card-and-address-wrapper:last-child {
+      margin-bottom: 12rem;
+    }
+    .mobileview-order-checkout-fixed {
+      display: block;
+    }
+    .checkout-step-4 {
+      max-width: 100% !important;
+    }
+  }
+  .cottage-large-title {
+    text-align: center;
+  }
+  .account-container {
+    width: 100%;
+    .cottage-large-title {
+      margin-bottom: 0 !important;
+    }
+  }
+  .Profile-tabs-container {
+    display: grid;
+  }
+  #cottage-tabs {
+    margin: 10px;
+  }
+  .cottage-container-row {
+    display: block;
+    .ant-btn.secondary-button {
+      margin-top: 1.5rem;
+      min-width: 100%;
+    }
+  }
+  #cottage-tabs .ant-tabs-tab {
+    color: $text-color !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    margin: 0 35px 0 0;
+  }
+  #cottage-tabs .ant-tabs-tab.ant-tabs-tab-active {
+    color: $secondary-color;
+  }
+  .cottage-container-row .cottage-blue-button,
+  .cottage-container-row .cottage-orange-button {
+    height: 55px !important;
+    font-size: 1rem !important;
+  }
+  .form-modal-wrapper {
+    max-width: 100% !important;
+    top: 0px !important;
+  }
+  .form-modal-wrapper .ant-modal-body {
+    padding: 40px !important;
+  }
+
+  .ant-select-selection-placeholder {
+    line-height: 3.2rem !important;
+  }
+  .ant-row.Dashboard-forms-container .ant-typography {
+    font-size: 12px !important;
+  }
+  .dashboard-form-title {
+    font-size: 2rem !important;
+    padding-top: 30px;
+  }
+}

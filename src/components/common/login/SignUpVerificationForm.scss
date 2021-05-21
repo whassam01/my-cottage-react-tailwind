@@ -1,0 +1,49 @@
+.signup-verification-wrapper {
+  display: flex;
+  flex-direction: column;
+  .signup-verification-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #192e46;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .signup-verification-description {
+    color: #657689;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    span:nth-child(2) {
+      color: #fb775a;
+    }
+    span {
+      display: block;
+    }
+  }
+  .signup-verification-control-box {
+    > div {
+      margin-bottom: 1.3rem;
+    }
+    .signin-forgot-password {
+      cursor: pointer;
+      font-size: 0.8rem;
+      color: #fb775a;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+
+  .no-email-received,
+  .have-account {
+    text-align: center;
+    color: #657689;
+    font-size: 0.9rem;
+    span {
+      color: #fb775a;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

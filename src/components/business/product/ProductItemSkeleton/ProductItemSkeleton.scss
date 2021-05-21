@@ -1,0 +1,26 @@
+@import "./../../../../scss/settings/colors";
+@import "./../../../../scss/tools/mixins";
+
+.product-item-skeleton-wrapper {
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e4e8ee;
+  background-color: $white-color;
+  margin-bottom: 1rem;
+  .product-item-skeleton {
+    .ant-skeleton-header .ant-skeleton-avatar {
+      height: 100px;
+      width: 100px;
+      border-radius: 4px;
+    }
+  }
+}
+
+@include customRange(0, 767) {
+  .product-item-skeleton {
+    .ant-skeleton-header .ant-skeleton-avatar {
+      height: 85px !important;
+      width: 85px !important;
+    }
+  }
+}

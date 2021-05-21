@@ -1,0 +1,65 @@
+.guest-checkout-right {
+  margin: 1rem;
+  flex: 1;
+  > div {
+    .right-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #192e46;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .guest-checkout-right-form {
+      .guest-checkout-right-description,
+      .guest-checkout-pick-up-info {
+        text-align: center;
+        color: #657689;
+        font-size: 0.9rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        max-width: 325px;
+      }
+
+      .guest-checkout-right-form-row {
+        display: flex;
+        margin-bottom: 1rem;
+        .ant-form-item {
+          margin-bottom: 0 !important;
+          flex: 1;
+        }
+        > .ant-form-item:nth-child(2) {
+          margin-left: 1rem;
+        }
+      }
+
+      .guest-checkout-pick-up-info {
+        margin-bottom: 0;
+        margin-top: 3rem;
+      }
+      .guest-checkout-pick-up-info-address {
+        font-weight: bold;
+        margin-top: 1.5rem;
+      }
+
+      .proceed-to-checkout-box {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 3rem;
+        justify-content: space-between;
+        .ant-row.ant-form-item {
+          margin-bottom: 0;
+        }
+        .agree-condition-text {
+          font-size: 0.7rem;
+          letter-spacing: 0.01em;
+          margin-right: 1rem;
+          span {
+            color: #fb775a;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

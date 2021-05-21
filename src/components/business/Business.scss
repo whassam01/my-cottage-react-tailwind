@@ -1,0 +1,126 @@
+@import "../../scss/settings/colors";
+@import "../../scss/tools/mixins";
+.business-product-card {
+  margin-bottom: 1rem !important;
+  .business-product-card-details {
+    display: flex;
+    .product-card-container {
+      width: 100%;
+      margin-left: 15px;
+    }
+    .card-header {
+      justify-content: space-between;
+      margin-bottom: 0.2rem;
+      display: flex;
+    }
+  }
+  .business-product-card-description {
+    margin-top: 1rem !important;
+  }
+}
+.Business-product-card-footer,
+.product-offer-item-button {
+  .primary-button {
+    width: auto;
+    float: right;
+    height: 2rem !important;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem !important;
+  }
+  .primary-button img {
+    height: 10px;
+  }
+}
+.business-product-card-description {
+  font-family: Poppins;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: #4c6889;
+}
+.card-footer {
+  display: flex;
+}
+.business-product-card-tags {
+  border: 1px solid #d9dee4 !important;
+  background-color: #ffffff !important;
+  color: $faded-color !important;
+  font-weight: 600;
+  font-size: 0.6rem !important;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.card-body {
+  p {
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: #4c6889;
+    text-shadow: 0.5px 0 0 #4c6889;
+    margin-bottom: 0.4rem;
+  }
+}
+.business-card-price {
+  margin-left: 1rem;
+}
+.business-card-price,
+.product-card-title {
+  color: $color;
+  text-shadow: 0.5px 0 0 $color;
+  font-size: 1rem;
+  font-family: Poppins;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+@include customRange(0, 768) {
+  .business-product-card {
+    .ant-card-body {
+      padding: 20px;
+    }
+  }
+  .product-card-container {
+    margin-left: 0 !important;
+    padding-right: 15px;
+  }
+  .business-product-card .business-product-card-details {
+    flex-flow: row-reverse;
+    margin-bottom: 1rem;
+    .card-header,
+    .card-footer {
+      margin-bottom: 0.5rem !important;
+    }
+    .mobile-card-price {
+      display: flex;
+      justify-content: space-between;
+      line-height: 24px;
+    }
+    .card-body {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .Business-product-card-footer {
+    .primary-button {
+      width: 100% !important;
+      float: right;
+      font-size: 0.8rem !important;
+      height: 2rem !important;
+    }
+    .plus-icon {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .business-product-image {
+    img {
+      width: 85px !important;
+      height: 85px !important;
+    }
+  }
+  .business-card-price {
+    font-size: 0.9rem;
+  }
+}

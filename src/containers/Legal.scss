@@ -1,0 +1,28 @@
+.help-tabs-list {
+  font-family: Poppins;
+  margin-top: 15%;
+}
+.help-tabs-list p,
+.help-tabs-list a,
+.static-tabs-content-wrapper h3,
+.static-tabs-content-wrapper p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #192e46;
+  cursor: pointer;
+}
+.help-tabs-list .active {
+  color: #fb775a;
+  font-weight: 600;
+}
+
+.account-help-wrapper h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 39px;
+  letter-spacing: -0.02em;
+  color: #192e46;
+}
+

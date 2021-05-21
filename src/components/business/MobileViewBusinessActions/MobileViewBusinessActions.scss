@@ -1,0 +1,66 @@
+@import "./../../../scss/settings/colors";
+
+.mobile-view-businsess-info-actions-wrapper {
+  margin-bottom: 1rem;
+  .ant-select-focused.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    box-shadow: none;
+  }
+  .ant-select-selection-item {
+    margin-top: 8px;
+  }
+  > .mobile-view-businsess-info-actions {
+    display: flex;
+    flex-direction: column;
+    img {
+      margin-right: 0.5rem;
+    }
+    .business-about-options {
+      display: flex;
+      > div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .business-about-button {
+        > * {
+          width: 100%;
+          color: #4c6889;
+          font-size: 0.9rem;
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+      .business-delivery-option-button {
+        > * {
+          width: 100%;
+          color: #4c6889;
+          font-size: 0.9rem;
+          font-weight: 500;
+          text-align: center;
+          min-height: 46px;
+          background-color: #fff;
+          border-radius: 3px;
+          border: none;
+          border: 1px solid #bcc6d3;
+        }
+      }
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+  .business-about-options {
+    justify-content: space-between !important;
+    border: 1px solid rgba(118, 140, 165, 0.2);
+    border-width: 1px 0 1px 0px;
+    padding: 10px 10px;
+    > div {
+      flex: inherit !important;
+    }
+    .business-about-button > * {
+      font-size: 1rem !important;
+      font-weight: 600 !important;
+    }
+  }
+}

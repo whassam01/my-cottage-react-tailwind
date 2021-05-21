@@ -1,0 +1,173 @@
+@import "./../../../scss/tools/mixins";
+
+.order-summary-checkout-footer {
+  padding: 1rem;
+  background: #fff;
+}
+
+.order-checkout-wrapper {
+  background-color: #ffffff;
+  .order-checkout {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem !important;
+    .order-checkout-place-order {
+      button {
+        min-height: 60px;
+        &:disabled {
+          background: #eff1f5;
+          color: #9aa6b4;
+        }
+      }
+    }
+    > div:first-child {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    input,
+    button,
+    .ant-btn,
+    .ant-input {
+      height: 38px;
+      border-radius: 4px;
+    }
+    .ant-input,
+    input {
+      padding-left: 10px;
+      background: url("../../../assets/business/checkout/voucher.svg") no-repeat;
+      background-position: left;
+      background-origin: content-box !important;
+      text-indent: 30px;
+      &::-webkit-input-placeholder {
+        padding-right: 30px;
+      }
+    }
+    .ant-btn {
+      background: #fb775a;
+      color: #ffffff;
+      font-weight: 600;
+      border: none;
+      padding: 0px 20px;
+    }
+    .ant-btn:hover,
+    .ant-btn:focus,
+    .ant-btn:active,
+    .ant-btn.active {
+      border-color: transparent;
+    }
+    .ant-input:focus,
+    .ant-input-focused,
+    .ant-input:hover {
+      border-color: #d9dee4;
+      border-right-width: 1px !important;
+      outline: 0;
+      box-shadow: none;
+      color: inherit;
+    }
+    .order-checkout-input-code {
+      display: flex;
+      align-items: flex-end;
+      flex: 1;
+      margin-bottom: 1.5rem;
+      .order-checkout-input-code-input-control {
+        background: #fff;
+        color: #768ca5;
+        font-size: 0.625rem;
+        letter-spacing: 0.07rem;
+        font-weight: 600;
+        flex: 1;
+        input {
+          min-height: 46px;
+        }
+      }
+      .order-checkout-input-code-apply-button {
+        margin-left: 1rem;
+        button {
+          min-height: 46px;
+        }
+      }
+    }
+
+    .order-voucher-code-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .message-box {
+      span {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        color: #fb5a5a;
+      }
+    }
+  }
+}
+.preparing-food-modal {
+  margin: 0 !important;
+  bottom: 0;
+  height: 100% !important;
+  padding: 0 !important;
+  width: 100% !important;
+  top: 0px !important;
+  .ant-modal-close-x {
+    display: none;
+  }
+  .ant-modal-body,
+  .ant-modal-content {
+    height: 100% !important;
+  }
+  .preparing-food {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .preparing-food img {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+  .preparing-food-description {
+    margin-bottom: 2rem;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #657689;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+}
+
+@include customRange(0, 767) {
+  .preparing-food-modal {
+    max-width: 100% !important;
+    top: inherit !important;
+    .preparing-food {
+      width: 100%;
+    }
+  }
+  .order-checkout > div:first-child {
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    flex-direction: column;
+    .order-checkout-input-code-input-control {
+      flex: 1;
+    }
+    .order-checkout-input-code,
+    .order-voucher-code-wrapper {
+      width: 100%;
+    }
+    .order-voucher-code-wrapper {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .message-box {
+      margin-left: 0px;
+      height: auto !important;
+      line-height: 30px !important;
+    }
+  }
+}

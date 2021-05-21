@@ -1,0 +1,124 @@
+.order-day-item-wrapper {
+  min-width: 72px;
+  height: 72px;
+  padding: 4px;
+  line-height: 1;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  cursor: not-allowed;
+  span {
+    color: #c9d5e4 !important;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.disabled-day-card-tooltip {
+  .ant-tooltip-inner,
+  .ant-tooltip-arrow-content {
+    background-color: #ffffff;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    color: #4c6889;
+  }
+}
+.day-item-has-offers {
+  background-color: #eff1f5 !important;
+  cursor: pointer;
+  span {
+    color: #192e46 !important;
+  }
+}
+.order-day-items-row-arrow {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.order-day-item-tick {
+  height: 8px;
+  > {
+    path {
+      stroke: #192e46;
+      fill: #192e46;
+    }
+  }
+}
+
+.order-day-active-item {
+  background-color: #fb775a !important;
+  span {
+    color: #ffffff !important;
+  }
+}
+// .order-day-active-item .order-day-item-day-of-month {
+//   color: #ffffff;
+// }
+
+.order-day-active-item .order-day-item-badge > div {
+  .order-day-item-tick {
+    > {
+      path {
+        stroke: #ffffff;
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+.order-day-item-badge {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.order-day-item-badge > div {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 8px;
+}
+.order-day-item-day-of-month {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #000000;
+  line-height: 0.8;
+}
+
+.order-day-item-day-of-week {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-size: 10px;
+  letter-spacing: 0.07rem;
+}
+.order-day-item-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-size: 10px;
+}

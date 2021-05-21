@@ -1,0 +1,29 @@
+.business-footer-wrapper {
+  background-color: #ffffff;
+  border-top: 1px solid #e4e8ed;
+  padding: 3rem 0;
+  .business-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.8rem;
+    .business-footer-powered-by {
+      color: #aebdcf;
+      margin-bottom: 1.5rem;
+    }
+    .business-footer-icon {
+      margin-bottom: 1.5rem;
+    }
+    .business-footer-links {
+      color: #4c6889;
+      text-shadow: 0 0;
+      span:not(.dashses) {
+        cursor: pointer;
+      }
+    }
+    .dashses {
+      margin: 0 10px;
+    }
+  }
+}

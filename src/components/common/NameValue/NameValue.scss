@@ -1,0 +1,30 @@
+.name-value-wrapper {
+  line-height: 1;
+  width: fit-content;
+}
+
+.name-value-wrapper h3,
+.name-value-wrapper p {
+  margin: 0;
+}
+.name-value-wrapper .name-value-name {
+  margin-bottom: 6px;
+}
+
+.name-value-wrapper .name-value-value {
+  margin-bottom: 15px;
+}
+
+.name-value-wrapper .name-value-name p {
+  color: #768ca5;
+  font-weight: 600;
+  font-size: 0.64rem;
+}
+
+.name-value-wrapper .name-value-value h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.value-faded h3 {
+  font-weight: normal !important;
+}

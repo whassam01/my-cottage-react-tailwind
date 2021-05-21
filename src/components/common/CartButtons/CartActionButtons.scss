@@ -1,0 +1,27 @@
+@import "../../../scss/tools/mixins";
+.cart-buttons {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    border: 1px solid #e4e8ed;
+  }
+}
+.cart-buttons.disabled {
+  cursor: not-allowed !important;
+  &:hover {
+    border: none !important;
+  }
+  .cottage-edit-button-container img {
+    cursor: not-allowed !important;
+  }
+}
+
+@include customRange(0, 768) {
+  .cart-buttons {
+    border: 1px solid #e4e8ed;
+  }
+}

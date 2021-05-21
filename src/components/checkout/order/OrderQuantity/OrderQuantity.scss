@@ -1,0 +1,59 @@
+@import "./../../../../scss/tools/mixins";
+.order-quantity-wrapper {
+  border: 1px solid transparent;
+
+  border-radius: 4px;
+  width: 80px;
+  height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  .order-quantity {
+    display: flex;
+    user-select: none;
+    > div:nth-child(1) {
+      margin-left: 10px;
+      cursor: pointer;
+      visibility: hidden;
+    }
+    > div:nth-child(2) {
+      flex: 1;
+    }
+    > div:nth-child(3) {
+      margin-right: 10px;
+      cursor: pointer;
+      visibility: hidden;
+    }
+  }
+}
+.order-quantity-detail {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+.border:hover {
+  border: 1px solid #d9dee4;
+}
+.order-quantity-wrapper:hover {
+  .order-quantity {
+    > div:nth-child(1) {
+      visibility: visible;
+    }
+    > div:nth-child(3) {
+      visibility: visible;
+    }
+  }
+}
+
+@include customRange(0, 767) {
+  .order-quantity-wrapper {
+    border: 1px solid #d9dee4;
+    .order-quantity {
+      > div:nth-child(1) {
+        visibility: visible;
+      }
+      > div:nth-child(3) {
+        visibility: visible;
+      }
+    }
+  }
+}

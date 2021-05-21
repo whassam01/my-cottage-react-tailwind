@@ -1,0 +1,27 @@
+@import "./../../../../../scss/tools/mixins";
+.cottage-tag {
+  border-radius: 4px !important;
+  padding: 1px 10px !important;
+  cursor: pointer !important;
+  font-family: Poppins;
+  font-weight: 600 !important;
+  font-size: 0.6rem !important;
+  letter-spacing: 0.05em !important;
+  color: #768ca5 !important;
+  background: #ffffff !important;
+}
+
+.cottage-tag.cottage-tag-active {
+  background: #4c6889 !important;
+  border: 1px solid #4c6889;
+  color: #ffffff !important;
+}
+@include customRange(0, 767) {
+  .cottage-tag {
+    font-size: 0.8rem !important;
+    padding: 5px 15px !important;
+  }
+  .all-product-categories-wrapper {
+    max-width: 100px;
+  }
+}

@@ -1,0 +1,18 @@
+.cottage-input-need-help {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 20px;
+  letter-spacing: 0.01em;
+  color: #192e46;
+}
+
+.cottage-input-need-help img {
+  width: 20px;
+  margin-right: 13px;
+}
+@media (max-width: 768px) {
+  .cottage-input-need-help {
+    font-size: 1rem !important;
+  }
+}

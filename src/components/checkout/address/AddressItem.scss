@@ -1,0 +1,107 @@
+@import "./../../../scss/settings/colors";
+@import "./../../../scss/settings/global";
+@import "./../../../scss/tools/mixins";
+
+.address-item-wrapper:not(.active-address-item):hover {
+  background-color: #f6f8fa;
+  transition: all 0.1s ease-in;
+}
+.address-item-wrapper.detail-address-item-wrapper {
+  background-color: #f6f8fa;
+  padding: 0 1rem !important;
+  border: 1px solid transparent;
+}
+.address-item-wrapper.address-item-not-clickable {
+  cursor: default;
+  .address-item-street {
+    text-shadow: 0 0;
+  }
+  &:hover {
+    background: #fff;
+  }
+}
+.address-item-wrapper.active-address-item {
+  border: 1px solid #fb775a;
+  color: #fb775a;
+  background-color: #feeeea;
+  .name-value-name {
+    p {
+      color: #fb775a;
+    }
+  }
+}
+
+.address-item-wrapper {
+  border: 1px solid #e0e4e9;
+  margin-bottom: 1rem;
+  background-color: $white-color;
+  border-radius: $base-border-radius;
+  cursor: pointer;
+  .address-item {
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    align-items: center;
+    padding: 1rem;
+    .address-item-street {
+      img {
+        margin-right: 10px;
+      }
+    }
+    .address-item-brand {
+      margin-right: 1rem;
+    }
+    .address-item-number {
+      text-shadow: 0 0;
+    }
+  }
+}
+
+.address-item-detailed {
+  width: 100%;
+  p {
+    margin-bottom: 1rem;
+    font-size: 0.74rem !important;
+  }
+  h3 {
+    font-size: 1.1rem !important;
+  }
+  .street-and-number {
+    border-bottom: 1px solid #768ca522;
+    padding: 1rem 0;
+  }
+  .city-and-state {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #768ca522;
+    padding: 1rem 0;
+    .name-value-wrapper:last-child {
+      text-align: right;
+    }
+  }
+  .country-and-zipcode {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 0;
+    .name-value-wrapper:last-child {
+      text-align: right;
+    }
+  }
+}
+
+@include customRange(0, 767) {
+  .address-item {
+    padding: 0.6rem !important;
+    .address-item-street {
+      img {
+        display: none;
+      }
+      > div {
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}

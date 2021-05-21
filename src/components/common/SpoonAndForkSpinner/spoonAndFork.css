@@ -1,0 +1,18 @@
+.spoon-loader {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  overflow: hidden;
+  left: 50%;
+  top: 40%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  z-index: 4;
+}
+@media only screen and (max-width: 760px) {
+  .spoon-loader {
+    transform: translate(-50%, 10px);
+  }
+}

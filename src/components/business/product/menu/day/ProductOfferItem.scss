@@ -1,0 +1,50 @@
+@import "./../../../../../scss/tools/mixins";
+
+.product-offer-item-wrapper.product-offer-item-active {
+  background-color: #fb775a !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.product-offer-item-wrapper {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  min-height: 30px;
+  min-width: 130px;
+  color: #192e46;
+  border: 1px solid #e0e4e9;
+  min-width: 140px;
+  margin-bottom: 1rem;
+  > .product-offer-item {
+    .product-offer-quantity {
+      display: flex !important;
+      color: #ffffff !important;
+      position: absolute;
+      top: -10px;
+      right: -13px;
+      height: 20px;
+      width: 20px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      background-color: #192e46;
+      font-size: 0.6rem;
+      align-items: center;
+      justify-content: center;
+      line-height: 0;
+    }
+  }
+}
+@include customRange(0, 420) {
+  .product-offer-item-wrapper {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}

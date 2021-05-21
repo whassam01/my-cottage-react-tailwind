@@ -1,0 +1,387 @@
+@font-face {
+  font-family: 'daikon-regular';
+  src: url('./fonts/daikon-regular-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: 'salt' on;
+}
+
+@font-face {
+  font-family: 'daikon-bold';
+  src: url('./fonts/daikon-bold-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: 'salt' on;
+}
+
+@font-face {
+  font-family: 'daikonthin';
+  src: url('./fonts/daikon-thin-webfont.eot');
+  src: url('./fonts/daikon-thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-thin-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-thin-webfont.woff') format('woff'),
+       url('./fonts/daikon-thin-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-thin-webfont.svg#daikonthin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonthin_italic';
+  src: url('./fonts/daikon-thinitalic-webfont.eot');
+  src: url('./fonts/daikon-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-thinitalic-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-thinitalic-webfont.woff') format('woff'),
+       url('./fonts/daikon-thinitalic-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-thinitalic-webfont.svg#daikonthin_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonextra_light';
+  src: url('./fonts/daikon-extralight-webfont.eot');
+  src: url('./fonts/daikon-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-extralight-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-extralight-webfont.woff') format('woff'),
+       url('./fonts/daikon-extralight-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-extralight-webfont.svg#daikonextra_light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonextra_light_italic';
+  src: url('./fonts/daikon-extralightitalic-webfont.eot');
+  src: url('./fonts/daikon-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-extralightitalic-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-extralightitalic-webfont.woff') format('woff'),
+       url('./fonts/daikon-extralightitalic-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-extralightitalic-webfont.svg#daikonextra_light_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonlight';
+  src: url('./fonts/daikon-light-webfont.eot');
+  src: url('./fonts/daikon-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-light-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-light-webfont.woff') format('woff'),
+       url('./fonts/daikon-light-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-light-webfont.svg#daikonlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonlight_italic';
+  src: url('./fonts/daikon-lightitalic-webfont.eot');
+  src: url('./fonts/daikon-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-lightitalic-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-lightitalic-webfont.woff') format('woff'),
+       url('./fonts/daikon-lightitalic-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-lightitalic-webfont.svg#daikonlight_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonregular';
+  src: url('./fonts/daikon-regular-webfont.eot');
+  src: url('./fonts/daikon-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-regular-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-regular-webfont.woff') format('woff'),
+       url('./fonts/daikon-regular-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-regular-webfont.svg#daikonregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonitalic';
+  src: url('./fonts/daikon-italic-webfont.eot');
+  src: url('./fonts/daikon-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-italic-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-italic-webfont.woff') format('woff'),
+       url('./fonts/daikon-italic-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-italic-webfont.svg#daikonitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonmedium';
+  src: url('./fonts/daikon-medium-webfont.eot');
+  src: url('./fonts/daikon-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-medium-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-medium-webfont.woff') format('woff'),
+       url('./fonts/daikon-medium-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-medium-webfont.svg#daikonmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonmedium_italic';
+  src: url('./fonts/daikon-mediumitalic-webfont.eot');
+  src: url('./fonts/daikon-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-mediumitalic-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-mediumitalic-webfont.woff') format('woff'),
+       url('./fonts/daikon-mediumitalic-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-mediumitalic-webfont.svg#daikonmedium_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonsemi_bold';
+  src: url('./fonts/daikon-semibold-webfont.eot');
+  src: url('./fonts/daikon-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-semibold-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-semibold-webfont.woff') format('woff'),
+       url('./fonts/daikon-semibold-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-semibold-webfont.svg#daikonsemi_bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonsemi_bold_italic';
+  src: url('./fonts/daikon-semibolditalic-webfont.eot');
+  src: url('./fonts/daikon-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-semibolditalic-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-semibolditalic-webfont.woff') format('woff'),
+       url('./fonts/daikon-semibolditalic-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-semibolditalic-webfont.svg#daikonsemi_bold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonbold';
+  src: url('./fonts/daikon-bold-webfont.eot');
+  src: url('./fonts/daikon-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-bold-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-bold-webfont.woff') format('woff'),
+       url('./fonts/daikon-bold-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-bold-webfont.svg#daikonbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonbold_italic';
+  src: url('./fonts/daikon-bolditalic-webfont.eot');
+  src: url('./fonts/daikon-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-bolditalic-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-bolditalic-webfont.woff') format('woff'),
+       url('./fonts/daikon-bolditalic-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-bolditalic-webfont.svg#daikonbold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'daikonblack';
+  src: url('./fonts/daikon-black-webfont.eot');
+  src: url('./fonts/daikon-black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/daikon-black-webfont.woff2') format('woff2'),
+       url('./fonts/daikon-black-webfont.woff') format('woff'),
+       url('./fonts/daikon-black-webfont.ttf') format('truetype'),
+       url('./fonts/daikon-black-webfont.svg#daikonblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'daikon-regular', sans-serif;
+  font-feature-settings: 'salt' on;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'daikon-regular';
+  font-style: normal;
+  font-weight: 600;
+}
+
+html,
+body,
+#root,
+.container {
+  min-height: 100%;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::selection {
+  background: #00c5a7;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00c5a7;
+  color: #fff;
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+}
+
+.loginContainer {
+  position: absolute;
+  top: 39px;
+  right: 50px;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .loginContainer {
+    text-align: center;
+    top: 80px;
+    right: 0;
+    left: 0;
+  }
+}
+
+.loginContainer .signUpLink {
+  margin-right: 25px;
+}
+
+.loginContainer a:link,
+.loginContainer a:visited {
+  color: #fff;
+  text-decoration: none;
+  transition: all 200ms ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.loginContainer a:hover,
+.loginContainer a:active {
+  border-bottom: 1px solid #fff;
+}
+
+.loginContainer .fal {
+  margin-right: 10px;
+}
+
+.inputText {
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 12pt;
+  font-weight: 200;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  transition: border 200ms ease;
+  -webkit-appearance: none;
+}
+.inputText:focus {
+  border: 1px solid #00c5a7;
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/fa-light-300.eot');
+  src: url('/fonts/fa-light-300.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fa-light-300.woff2') format('woff2'),
+    url('/fonts/fa-light-300.woff') format('woff'),
+    url('/fonts/fa-light-300.ttf') format('truetype'),
+    url('/fonts/fa-light-300.svg#fontawesome') format('svg');
+}
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/fa-brands-400.eot');
+  src: url('/fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fa-brands-400.woff2') format('woff2'),
+    url('/fonts/fa-brands-400.woff') format('woff'),
+    url('/fonts/fa-brands-400.ttf') format('truetype'),
+    url('/fonts/fa-brands-400.svg#fontawesome') format('svg');
+}
+.fal {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300;
+}
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}

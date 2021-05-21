@@ -1,0 +1,30 @@
+@import "./../settings/global";
+@import "./../settings/colors";
+
+html,
+body,
+#root,
+.container {
+  min-height: 650px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Assistant", sans-serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background-color: $body-bg-color;
+  color: $color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  color: $white-color;
+  background: $primary-color;
+}
+:focus {
+  outline: none;
+}

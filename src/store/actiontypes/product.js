@@ -1,0 +1,11 @@
+export const ProductActionType = {
+  GET_PRODUCTS_REQUESTED: 'GET_PRODUCTS_REQUESTED',
+  GET_PRODUCTS_SUCCESS: 'GET_PRODUCTS_SUCCESS',
+  GET_PRODUCTS_ERROR: 'GET_PRODUCTS_ERROR',
+
+  SET_PRODUCT_CATEGORY: 'SET_PRODUCT_CATEGORY',
+};
+
+export const ProductKeys = {
+  Products: 'products',
+};

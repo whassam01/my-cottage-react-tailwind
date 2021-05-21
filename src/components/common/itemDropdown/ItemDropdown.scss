@@ -1,0 +1,42 @@
+
+.cottage-item-dropdown {
+  z-index: 100 !important;
+}
+
+
+.cottage-item-dropdown-menu {
+  width: 110px;
+  margin-left: -15px !important;
+  margin-top: -40px !important;
+  padding-top: 30px !important;
+}
+
+.cottage-item-dropdown-menu-remove, .cottage-item-dropdown-menu-edit {
+  padding-left: 18px !important;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  letter-spacing: 0.01em;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.cottage-item-dropdown-menu-remove {
+  color: #ED9A8E !important;
+}
+
+.cottage-item-dropdown-menu-edit {
+  color: #4C6889 !important;
+}
+
+.config-button-div {
+  padding-left: 18.75px;
+  padding-right: 18.75px;
+  padding-top: 8.25px;
+  padding-bottom: 8.25px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 101;
+}

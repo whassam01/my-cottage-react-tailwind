@@ -1,0 +1,68 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  font-family: Poppins;
+}
+.addresses {
+  margin-bottom: 1.5rem;
+}
+.account-table-head th,
+.account-table-body td {
+  padding: 10px;
+  border-bottom: 0.624888px solid rgb(242, 243, 245);
+}
+.account-table-head {
+  th {
+    color: #768ca5;
+    font-weight: 600;
+    font-size: 0.6rem;
+    line-height: 13px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+}
+.account-table-body td {
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #192e46;
+}
+@media only screen and (max-width: 576px) {
+  .account-table-head {
+    display: none;
+  }
+  .profile-table-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .account-table-body td {
+    font-size: 1.5em;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    color: #192e46;
+  }
+  #account-tabs-sections {
+    padding: 0 !important;
+    background-color: transparent !important;
+  }
+  #account-tabs-sections .ant-card-body {
+    padding: 0px !important;
+  }
+  .profile-table-row td div {
+    display: inline-grid;
+    padding: 10px 0;
+    &:before {
+      color: #6c7a89;
+      padding-right: 10px;
+      content: attr(datalabel);
+      flex-basis: 50%;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 27px;
+      letter-spacing: 0.07em;
+    }
+  }
+}

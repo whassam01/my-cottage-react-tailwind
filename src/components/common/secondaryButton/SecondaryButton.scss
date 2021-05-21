@@ -1,0 +1,22 @@
+$secondary-color: #4c6889;
+$button-text-color: white;
+
+.secondary-button {
+  border-radius: 3px !important;
+  height: 38px !important;
+  color: $button-text-color !important;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 0.7rem !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: $secondary-color !important;
+}
+@media only screen and (max-width: 576px) {
+  .secondary-button {
+    font-size: 1rem !important;
+    height: 50px !important;
+    // width: 100%;
+  }
+}
